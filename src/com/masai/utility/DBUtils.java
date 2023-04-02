@@ -7,13 +7,29 @@ import java.sql.SQLException;
 import java.util.ResourceBundle;
 
 public class DBUtils {
-	static Connection getConnectionToDatabase()throws ClassNotFoundException, SQLException{
-		Class.forName("com.mysql.cj.jdbc.Driver");
-		ResourceBundle rb = ResourceBundle.getBundle("dbdetails");
-		return DriverManager.getConnection(rb.getString("url"), rb.getString("username"),rb.getString("password"));
+	public static Connection getConnectionToDatabase(){
+		Connection conn = null;
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			ResourceBundle rb = ResourceBundle.getBundle("dbdetails");
+			conn =  DriverManager.getConnection(rb.getString("url"), rb.getString("username"),rb.getString("password"));
+		}
+		catch(ClassNotFoundException | SQLException ex) {
+			ex.printStackTrace();
+		}
+		finally {
+			if (conn == null) {
+				try {
+					conn.close();
+				} catch (SQLException e) {
+					e.printStackTrace();
+				}
+			}
+		}
+		return conn;
 	}
 	
-	static void closeConnection(Connection con) throws SQLException{
+	public static void closeConnection(Connection con) throws SQLException{
 		if(con != null) {
 			con.close();
 		}
