@@ -2,8 +2,6 @@
 
 <p align="center"> <img src = "https://github.com/Mhendrapratap/little-fog-1256/blob/master/_Pink%20and%20Beige%20Web%20Projects%20Computer%20Logo.png"> </p>
 
-![ER_Diagram](https://github.com/Mhendrapratap/little-fog-1256/blob/master/_Pink%20and%20Beige%20Web%20Projects%20Computer%20Logo.png)
-
 <h3>ER Diagram:-</h3>
 
 ![ER_Diagram](https://user-images.githubusercontent.com/97378497/229433165-0d830695-25fa-460f-9b0f-c24cbaf43b71.png)
