@@ -1,1 +1,1 @@
-![ER Diagram](https://user-images.githubusercontent.com/69115064/221394047-f348aede-222f-45fe-8326-d57901b22475.png)
+![ER_Diagram](https://user-images.githubusercontent.com/97378497/229433165-0d830695-25fa-460f-9b0f-c24cbaf43b71.png)
